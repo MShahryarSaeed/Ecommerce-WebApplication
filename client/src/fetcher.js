@@ -1,7 +1,7 @@
 // Define the base URL for API requests (db.json)
 const BASE_URL = 'http://localhost:3001';
 
-// Function to perform API requests and handle responses.
+// Function to perform API requests and handle responses...
 export const fetcher = async (url) => {
     // Create a response object with initial values
     let responseObject = { errorMessage: '', data: [] };
