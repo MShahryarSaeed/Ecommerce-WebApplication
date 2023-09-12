@@ -1,5 +1,5 @@
 // Define the base URL for API requests (db.json)
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'http://localhost:3001';
 
 // Function to perform API requests and handle responses.
 export const fetcher = async (url) => {
@@ -28,7 +28,7 @@ export const fetcher = async (url) => {
     }
 }
 
-// Function to fetch categories using the fetcher function
+// Function to fetch categories using the fetcher functions
 export const getCategories = () => {
     return fetcher('/categories');
 }
