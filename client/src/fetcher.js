@@ -5,6 +5,7 @@ const BASE_URL = 'http://localhost:3001';
 export const fetcher = async (url) => {
     // Create a response object with initial values
     let responseObject = { errorMessage: '', data: [] };
+    
     try {
         // Fetch data from the specified URL
         const response = await fetch(BASE_URL + url);
@@ -41,3 +42,5 @@ export const getProducts = (id) => {
 export const getProductById = (id) => {
     return fetcher('/products/' + id);
 }
+
+//Last commit
